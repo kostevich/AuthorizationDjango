@@ -8,7 +8,10 @@ from rest_framework.response import Response
 from .models import User
 # Используем модуль, для вывода ошибки авторизации.
 from rest_framework.exceptions import AuthenticationFailed
-
+# Импортируем jwt, открытый стандарт (RFC 7519) для создания токенов доступа, основанный на формате JSON.
+import jwt
+# Импортируем datetime, для реализации работы с временем.
+import datetime
 
 # Создадим класс регистрации Registerview.
 class Registerview(APIView):
@@ -38,9 +41,12 @@ class Loginview(APIView):
         if user is None:
             # Вывод ошибки аутентификации: пользователь не существует.
             raise AuthenticationFailed("Пользователя не существует")
-        # Если email пользователя и пароль не совпадает с базой данных.
-        # if not user.check_password(password):
-        #     # Вывод ошибки аутентификации: неверный пароль.
-        #     raise AuthenticationFailed('Неверный пароль')
+
+        payload = {
+            'id': user.id,
+            'exp': datetime.datetime.utcnow()+datetime.timedelta(hours=24),
+            'iat': datetime.datetime.utcnow()
+        }
+        token = jwt.encode(payload, 'secret', algorithm='HS256').decode('utf-8')
         # Возвращаем пользователя.
-        return Response({'message':'Вход выполнен'})
+        return Response({'jwt': token})
