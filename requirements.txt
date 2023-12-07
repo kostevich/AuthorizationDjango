@@ -1,2 +1,4 @@
-Django
-PyJWT==1.7.1
+djangorestframework
+Django 
+git+https://github.com/DUB1401/dublib#egg=dublib
+PyJWT

@@ -1,2 +1,6 @@
+# Program files
+__pycache__
+migrations
 
-auth/auth/settings.py
+# Confidential files
+auth/db.sqlite3
