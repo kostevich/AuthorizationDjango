@@ -22,23 +22,23 @@ python manage.py runserver
 5. Перейти по ссылке (пример: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)).
 
 # Пример работы
-**[Регистрация:](http://127.0.0.1:8000/register):**
+**Регистрация:**
 
 ![image](https://github.com/kostevich/Authorization_Django/assets/109979502/5c0ed103-4f92-4a24-aa15-b562cb5cd655)
 
 ![image](https://github.com/kostevich/Authorization_Django/assets/109979502/a20d97f2-e417-40e7-a6f5-ec3e214772ef)
 
-**[Вход в систему:](http://127.0.0.1:8000/register):**
+**Вход в систему:**
 
 ![image](https://github.com/kostevich/Authorization_Django/assets/109979502/2181e424-6339-4714-8b26-6b354892c7c9)
 
 ![image](https://github.com/kostevich/Authorization_Django/assets/109979502/4a1a86c9-8df5-4939-97f2-1d46c2bbdd46)
 
-**[Данные пользователя:](http://127.0.0.1:8000/user):**
+**Данные пользователя:**
 
 ![image](https://github.com/kostevich/Authorization_Django/assets/109979502/d27e3bdc-94e1-4733-8d9a-c0f006084cd7)
 
-**[Выход из системы:](http://127.0.0.1:8000/logout):**
+**Выход из системы:**
 
 ![image](https://github.com/kostevich/Authorization_Django/assets/109979502/21f837d4-c349-4bb5-ba46-61afa803696e)
 
