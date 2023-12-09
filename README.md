@@ -8,7 +8,7 @@
 ```
 pip install Django
 pip install djangorestframework
-pip install git+https://github.com/DUB1401/dublib#egg=dublib
+pip install git+https://github.com/DUB1401/dublib
 pip install PyJWT
 ```
 Либо установить сразу все пакеты при помощи следующей команды, выполненной из директории скрипта.
