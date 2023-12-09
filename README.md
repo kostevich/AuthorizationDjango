@@ -4,11 +4,11 @@
 # Порядок установки и использования.
 1. Загрузить репозиторий. Распаковать. 
 2. Установить [Python](https://www.python.org/downloads/) версии не старше 3.11. Рекомендуется добавить в PATH.
-3. В среду исполнения установить следующие пакеты: [djangorestframework](https://github.com/encode/django-rest-framework?ysclid=lpvej8gr5a512312386) не старше 3.14.0, [Django](https://github.com/django/django?ysclid=lph3fmn0za256973455) не старше 4.2.1, [dublib](https://github.com/DUB1401/dublib), [PyJWT](https://github.com/jpadilla/pyjwt?ysclid=lpvehdtfmm948560978) не старше 1.7.1.
+3. В среду исполнения установить следующие пакеты: [Django](https://github.com/django/django?ysclid=lph3fmn0za256973455), [djangorestframework](https://github.com/encode/django-rest-framework?ysclid=lpvej8gr5a512312386), [dublib](https://github.com/DUB1401/dublib), [PyJWT](https://github.com/jpadilla/pyjwt?ysclid=lpvehdtfmm948560978) не старше 1.7.1.
 ```
-pip install djangorestframework
 pip install Django
-pip install git+https://github.com/DUB1401/dublib#egg=dublib
+pip install djangorestframework
+pip install git+https://github.com/DUB1401/dublib
 pip install PyJWT
 ```
 Либо установить сразу все пакеты при помощи следующей команды, выполненной из директории скрипта.
