@@ -1,4 +1,4 @@
-djangorestframework
 Django 
+djangorestframework
 git+https://github.com/DUB1401/dublib#egg=dublib
 PyJWT

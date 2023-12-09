@@ -6,8 +6,8 @@
 from rest_framework.exceptions import AuthenticationFailed
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from .serializers import UserSerializer
 from .models import User
+from .serializers import UserSerializer
 
 
 import datetime
