@@ -4,7 +4,7 @@
 #==========================================================================================#
 
 from django.urls import path
-from .views import Registerview, Loginview, UserView, LogoutView
+from .views import  Loginview, LogoutView, Registerview, UserView
 
 #==========================================================================================#
 # >>>>>  ЛОКАЛЬНЫЕ ССЫЛКИ ДЛЯ РАБОТЫ САЙТА <<<<< #
